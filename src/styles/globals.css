@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Josefin+Sans:wght@300;400;500;600&family=Urbanist:wght@300;400;500;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+ 
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+ 
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+ 
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+ 
+    --radius: 0.5rem;
+
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(255, 167, 38);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    
+
+    --dark: rgb(38, 50, 56, 1);
+  
+    --dt-95: rgba(38, 50, 56, .95);
+    --dt-90: rgba(38, 50, 56, .9);
+    --dt-80: rgba(38, 50, 56, .8);
+    --dt-70: rgba(38, 50, 56, .7);
+    --dt-60: rgba(38, 50, 56, .6);
+    --dt-50: rgba(38, 50, 56, .5);
+    --dt-40: rgba(38, 50, 56, .4);
+    --dt-30: rgba(38, 50, 56, .3);
+    --dt-20: rgba(38, 50, 56, .2);
+    --dt-10: rgba(38, 50, 56, .1);
+    --dt-5: rgba(38, 50, 56, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+ 
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+ 
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+ 
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+ 
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+
+
+  
+  .theme-default {
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(255, 167, 38);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgb(38, 50, 56, 1);
+  
+    --dt-95: rgba(38, 50, 56, .95);
+    --dt-90: rgba(38, 50, 56, .9);
+    --dt-80: rgba(38, 50, 56, .8);
+    --dt-70: rgba(38, 50, 56, .7);
+    --dt-60: rgba(38, 50, 56, .6);
+    --dt-50: rgba(38, 50, 56, .5);
+    --dt-40: rgba(38, 50, 56, .4);
+    --dt-30: rgba(38, 50, 56, .3);
+    --dt-20: rgba(38, 50, 56, .2);
+    --dt-10: rgba(38, 50, 56, .1);
+    --dt-5: rgba(38, 50, 56, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+
+
+  .theme-painel {
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(38, 125, 255);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgb(247, 247, 247);
+  
+    --dt-95: rgba(38, 50, 56, .95);
+    --dt-90: rgba(38, 50, 56, .9);
+    --dt-80: rgba(38, 50, 56, .8);
+    --dt-70: rgba(38, 50, 56, .7);
+    --dt-60: rgba(38, 50, 56, .6);
+    --dt-50: rgba(38, 50, 56, .5);
+    --dt-40: rgba(38, 50, 56, .4);
+    --dt-30: rgba(38, 50, 56, .3);
+    --dt-20: rgba(38, 50, 56, .2);
+    --dt-10: rgba(38, 50, 56, .1);
+    --dt-5: rgba(38, 50, 56, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+
+
+  .theme-blue {
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(38, 125, 255);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgb(38, 50, 56, 1);
+  
+    --dt-95: rgba(38, 50, 56, .95);
+    --dt-90: rgba(38, 50, 56, .9);
+    --dt-80: rgba(38, 50, 56, .8);
+    --dt-70: rgba(38, 50, 56, .7);
+    --dt-60: rgba(38, 50, 56, .6);
+    --dt-50: rgba(38, 50, 56, .5);
+    --dt-40: rgba(38, 50, 56, .4);
+    --dt-30: rgba(38, 50, 56, .3);
+    --dt-20: rgba(38, 50, 56, .2);
+    --dt-10: rgba(38, 50, 56, .1);
+    --dt-5: rgba(38, 50, 56, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+  
+
+  .theme-a {
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(70, 120, 219);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgba(40, 38, 56, 1) !important;
+  
+    --dt-95: rgba(40, 38, 56, 0.95);
+    --dt-90: rgba(40, 38, 56, .9);
+    --dt-80: rgba(40, 38, 56, .8);
+    --dt-70: rgba(40, 38, 56, .7);
+    --dt-60: rgba(40, 38, 56, .6);
+    --dt-50: rgba(40, 38, 56, .5);
+    --dt-40: rgba(40, 38, 56, .4);
+    --dt-30: rgba(40, 38, 56, .3);
+    --dt-20: rgba(40, 38, 56, .2);
+    --dt-10: rgba(40, 38, 56, .1);
+    --dt-5: rgba(40, 38, 56, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+  
+
+  .theme-black {
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(0, 0, 0);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgba(39, 39, 39, 1) !important;
+  
+    --dt-95: rgba(39, 39, 39, 0.95);
+    --dt-90: rgba(39, 39, 39, .9);
+    --dt-80: rgba(39, 39, 39, .8);
+    --dt-70: rgba(39, 39, 39, .7);
+    --dt-60: rgba(39, 39, 39, .6);
+    --dt-50: rgba(39, 39, 39, .5);
+    --dt-40: rgba(39, 39, 39, .4);
+    --dt-30: rgba(39, 39, 39, .3);
+    --dt-20: rgba(39, 39, 39, .2);
+    --dt-10: rgba(39, 39, 39, .1);
+    --dt-5: rgba(39, 39, 39, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+  .theme-black-red {
+    --font-1: 'Urbanist', sans-serif;
+    --font-2: 'Urbanist', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(255, 72, 72);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgba(26, 26, 26, 1) !important;
+  
+    --dt-95: rgba(26, 26, 26, 0.95);
+    --dt-90: rgba(26, 26, 26, .9);
+    --dt-80: rgba(26, 26, 26, .8);
+    --dt-70: rgba(26, 26, 26, .7);
+    --dt-60: rgba(26, 26, 26, .6);
+    --dt-50: rgba(26, 26, 26, .5);
+    --dt-40: rgba(26, 26, 26, .4);
+    --dt-30: rgba(26, 26, 26, .3);
+    --dt-20: rgba(26, 26, 26, .2);
+    --dt-10: rgba(26, 26, 26, .1);
+    --dt-5: rgba(26, 26, 26, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+  
+  .theme-b {
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Outfit', sans-serif;
+  
+    --link-font: var(--font-2);
+    --light: rgba(255, 255, 255, 1);
+  
+    --accent-1: rgb(255, 71, 38);
+    --accent-2: rgba(132, 209, 238, 1);
+  
+    --dark: rgba(40, 56, 38, 1);
+  
+    --dt-95: rgba(40, 56, 38, 0.95);
+    --dt-90: rgba(40, 56, 38, .9);
+    --dt-80: rgba(40, 56, 38, .8);
+    --dt-70: rgba(40, 56, 38, .7);
+    --dt-60: rgba(40, 56, 38, .6);
+    --dt-50: rgba(40, 56, 38, .5);
+    --dt-40: rgba(40, 56, 38, .4);
+    --dt-30: rgba(40, 56, 38, .3);
+    --dt-20: rgba(40, 56, 38, .2);
+    --dt-10: rgba(40, 56, 38, .1);
+    --dt-5: rgba(40, 56, 38, .05);
+  
+    --lt-95: rgba(255, 255, 255, .95);
+    --lt-90: rgba(255, 255, 255, .9);
+    --lt-80: rgba(255, 255, 255, .8);
+    --lt-70: rgba(255, 255, 255, .7);
+    --lt-60: rgba(255, 255, 255, .6);
+    --lt-50: rgba(255, 255, 255, .5);
+    --lt-40: rgba(255, 255, 255, .4);
+    --lt-30: rgba(255, 255, 255, .3);
+    --lt-20: rgba(255, 255, 255, .2);
+    --lt-10: rgba(255, 255, 255, .1);
+    --lt-5: rgba(255, 255, 255, .05);
+  
+    --gs-95: rgba(49, 60, 66, 1);
+    --gs-90: rgba(60, 71, 76, 1);
+    --gs-80: rgba(81, 91, 96, 1);
+    --gs-70: rgba(103, 112, 116, 1);
+    --gs-60: rgba(125, 132, 136, 1);
+    --gs-50: rgba(146, 152, 155, 1);
+    --gs-40: rgba(168, 173, 175, 1);
+    --gs-30: rgba(190, 193, 195, 1);
+    --gs-20: rgba(212, 214, 215, 1);
+    --gs-10: rgba(233, 234, 235, 1);
+    --gs-5: rgba(244, 245, 245, 1);
+  
+    --h1: 92px;
+    --h2: 72px;
+    --h3: 48px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 18px;
+  
+    --text-xs: 11px;
+    --text-sm: 14px;
+    --text-md: 17px;
+    --text-lg: 19px;
+    --text-xl: 22px;
+  
+    --link: 11px;
+  
+    --titles-font-weight: 500;
+    --text-font-weight: 300;
+  
+    --t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+    --t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+    --t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+  
+    --site-background: var(--dark);
+  
+    --top-panel-height: 100px;
+  
+    --menu-collapse-value: 1200px;
+  }
+
+
+  
+}
+
+
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

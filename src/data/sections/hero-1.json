@@ -1,0 +1,53 @@
+{
+  "bg_image": "img/hero/1.jpg",
+  "subtitle": "Nova página",
+  "title": {
+    "before": "Esse é um teste de uma landing page",
+    "accent": "",
+    "after": ""
+  },
+  "description": "Aqui um subtítulo para explicar o que é essa landing page",
+  "image": "https://media.istockphoto.com/id/668218790/photo/group-of-friends-huddle-in-rear-view-together.jpg?s=612x612&w=0&k=20&c=EAbiZ7T0YkJiGLwIfDYDKip9_v1TUjBD5TlMk-leEfE=",
+  "partners": [
+    {
+      "image": "img/partners/1.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/2.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/3.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/4.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/5.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/6.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/7.svg",
+      "link": "#.",
+      "alt": "logo"
+    },
+    {
+      "image": "img/partners/8.svg",
+      "link": "#.",
+      "alt": "logo"
+    }
+  ]
+}

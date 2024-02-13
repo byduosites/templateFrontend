@@ -1,0 +1,186 @@
+{
+  "subtitle": "Planos",
+  "title": "Publique seu site 100% customizável agora",
+  "description": "Com nossa plataforma inovadora, você tem total liberdade para criar um site que reflete sua identidade única ou a da sua empresa.\n\n Nossas ferramentas intuitivas e flexíveis permitem que você personalize cada aspecto do seu site, desde o layout até as funcionalidades, sem a necessidade de conhecimento técnico avançado. ",
+  "button": {
+    "label": "Contact us",
+    "link": "/contact"
+  },
+  "items": {
+    "basic": [
+      {
+        "name": "Padrão Mensal",
+        "subname": "5% OFF",
+        "price": "R$ 34",
+        "price_after": ",90",
+        "price_label": "/ mês",
+        "list": [
+          {
+            "active": 1,
+            "value": "Domínio padrão"
+          },
+          {
+            "active": 1,
+            "value": "3 páginas"
+          },
+          {
+            "active": 1,
+            "value": "1 usuário"
+          },
+          {
+            "active": 1,
+            "value": "Suporte por Whatsapp Padrão"
+          },
+          {
+            "active": 1,
+            "value": "Banco de Imagens Padrão"
+          },
+          {
+            "active": 1,
+            "value": "Inteligência Artificial Exclusiva"
+          },
+          {
+            "active": 1,
+            "value": "Otimização para SEO"
+          },
+          {
+            "active": 1,
+            "value": "Design Responsivo em todos os dispositivos"
+          },
+          {
+            "active": 1,
+            "value": "Integração com Redes Sociais"
+          },
+          {
+            "active": 1,
+            "value": "Backup e Segurança"
+          },
+          {
+            "active": 1,
+            "value": "Personalização de Design"
+          }
+        ],
+        "button": {
+          "label": "Contratar",
+          "link": "https://pay.kiwify.com.br/ES0Z4Ma"
+        }
+      },
+      {
+        "name": "Padrão Trimestral",
+        "subname": "14% OFF",
+        "price": "R$ 29",
+        "price_after": ",96",
+        "price_label": "/ mês (faturado trimestralmente)",
+        "list": [
+          {
+            "active": 1,
+            "value": "Domínio padrão"
+          },
+          {
+            "active": 1,
+            "value": "3 páginas"
+          },
+          {
+            "active": 1,
+            "value": "1 usuário"
+          },
+          {
+            "active": 1,
+            "value": "Suporte por Whatsapp Padrão"
+          },
+          {
+            "active": 1,
+            "value": "Banco de Imagens Padrão"
+          },
+          {
+            "active": 1,
+            "value": "Inteligência Artificial Exclusiva"
+          },
+          {
+            "active": 1,
+            "value": "Otimização para SEO"
+          },
+          {
+            "active": 1,
+            "value": "Design Responsivo em todos os dispositivos"
+          },
+          {
+            "active": 1,
+            "value": "Integração com Redes Sociais"
+          },
+          {
+            "active": 1,
+            "value": "Backup e Segurança"
+          },
+          {
+            "active": 1,
+            "value": "Personalização de Design"
+          }
+        ],
+        "button": {
+          "label": "Contratar",
+          "link": "https://pay.kiwify.com.br/rA60Sk1"
+        }
+      },
+      {
+        "name": "Padrão Anual",
+        "subname": "28% OFF",
+        "price": "R$ 24",
+        "price_after": ",99",
+        "price_label": "/ mês (faturado anualmente)",
+        "list": [
+          {
+            "active": 1,
+            "value": "Domínio padrão"
+          },
+          {
+            "active": 1,
+            "value": "3 páginas"
+          },
+          {
+            "active": 1,
+            "value": "1 usuário"
+          },
+          {
+            "active": 1,
+            "value": "Suporte por Whatsapp Padrão"
+          },
+          {
+            "active": 1,
+            "value": "Banco de Imagens Padrão"
+          },
+          {
+            "active": 1,
+            "value": "Inteligência Artificial Exclusiva"
+          },
+          {
+            "active": 1,
+            "value": "Otimização para SEO"
+          },
+          {
+            "active": 1,
+            "value": "Design Responsivo em todos os dispositivos"
+          },
+          {
+            "active": 1,
+            "value": "Integração com Redes Sociais"
+          },
+          {
+            "active": 1,
+            "value": "Backup e Segurança"
+          },
+          {
+            "active": 1,
+            "value": "Personalização de Design"
+          }
+        ],
+        "button": {
+          "label": "Contratar",
+          "link": "https://pay.kiwify.com.br/SlkVqBu"
+        }
+      }
+    ],
+    "pro": [],
+    "enterprise": []
+  }
+}
